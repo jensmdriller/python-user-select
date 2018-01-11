@@ -1,0 +1,93 @@
+
+# Credential files
+#*.json
+.credentials/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# pickle files
+*.pickle
+
+# Temp files of various types
+*DELETE[_-]ME*
+*DELETEME*
+*delete[_-]me*
+*deleteme*
+*.tmp
+*.temp
+tmp/
+temp/
+
+.build/
+Build
+!Build/
+
+# Zip Files (Alex Williams)
+*.gz
+*.gzip
+*.xz
+*.zip
+*.tar
+
+# Distribution / packaging
+.Python
+env/
+build/
+dist/
+downloads/
+lib/
+lib64/
+parts/
+sdist/
+var/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*,cover
+.hypothesis/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# IPython Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# pyenv
+*.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# dotenv
+.env
+
+# virtualenv
+venv/
+ENV/
+
+# Log that we make sometimes for debugging
+logfile.log.txt
