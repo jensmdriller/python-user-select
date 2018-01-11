@@ -1,7 +1,7 @@
 # python-user-select
 This library contains functions for accepting user input in a variety of ways.
 
-** - Note, this library is in development and at this time, not fully functional. If these sorts of functions are important for your work, let me know and I'll be happy to expedite their completion. **
+**Note, this library is in development and at this time, not fully functional. If these sorts of functions are important for your work, let me know and I'll be happy to expedite their completion.**
 
 - - - -
 
