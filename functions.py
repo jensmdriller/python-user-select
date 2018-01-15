@@ -1,19 +1,23 @@
-def single_select_from_list(choice_list):
-    #global user_sel #dont use global... too dangerous
+def ssfl_body_function(choice_list):
     for i,each in enumerate(choice_list):
         print("Option [%i]: %s" %(i+1,each))
     user_sel_str = input("\nPlease select one an option from the list above or press 'q' to quit\n--> ")
-    if user_sel_str.lower().replace(" ","") == 'q':
-        print("Exiting...\n")
-        return None
     try:
         user_sel = int(user_sel_str)-1
         if user_sel not in range(len(choice_list)):
             raise Exception('Value out of range') 
     except:
         print("\nYou have entered an invalid option, please try again or press 'q' to quit\n")
-        user_sel, choice = single_select_from_list(choice_list)
-    return user_sel, choice_list[user_sel]
+        if user_sel_str.lower().replace(" ","") == 'q':
+            print("Exiting...\n")
+            return None
+        else:
+            user_sel = ssfl_body_function(choice_list)
+    return user_sel
+
+def single_select_from_list(choice_list):
+    user_sel = ssfl_body_function(choice_list)
+    return choice_list[user_sel] if user_sel != None else None
 
 def multi_select_from_list(choice_list):
     import re
