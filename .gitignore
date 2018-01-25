@@ -13,23 +13,15 @@ __pycache__/
 *.pickle
 
 # Temp files of various types
-*DELETE[_-]ME*
-*DELETEME*
-*delete[_-]me*
-*deleteme*
 *.tmp
 *.temp
 tmp/
 temp/
+build/
 
-.build/
-Build
-!Build/
-
-# Zip Files (Alex Williams)
+# Zip Files
 *.gz
 *.gzip
-*.xz
 *.zip
 *.tar
 
@@ -49,29 +41,6 @@ var/
 pip-log.txt
 pip-delete-this-directory.txt
 
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*,cover
-.hypothesis/
-
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
-*.log
-local_settings.py
-
-# Flask stuff:
-instance/
-.webassets-cache
-
 # IPython Notebook
 .ipynb_checkpoints
 *.ipynb
@@ -79,15 +48,8 @@ instance/
 # pyenv
 *.python-version
 
-# celery beat schedule file
-celerybeat-schedule
-
 # dotenv
 .env
 
-# virtualenv
-venv/
-ENV/
-
-# Log that we make sometimes for debugging
-logfile.log.txt
+# Logs for debugging
+*.log.txt
